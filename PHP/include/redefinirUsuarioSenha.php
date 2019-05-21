@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login</title>
+    <title>Redefinir</title>
 </head>
 
 <body>
     <div>
         <form method="POST" action="">
+            <div>
+                <h2>Preencha os campos:</h2>
+            </div>
             <div>
                 <label for="user">Usuário:</label>
                 <input type="text" id="user" name="user">
@@ -18,27 +21,17 @@
             <div>
                 <label for="senha">Senha:</label>
                 <input type="password" id="senha" name="senha">
-
             </div>
             <div>
-                <button type="submit" name="entrar">Entrar</button>
+                <label for="confirmsenha">Digite a senha novamente:</label>
+                <input type="password" id="confirmsenha" name="confirmsenha">
             </div>
             <div>
-                <a href="recuperar.php" target=""><input type="button" value="Esqueci o usuário"></a>
-                <a href="recuperar.php" target=""><input type="button" value="Esqueci a senha"></a>
+                <button type="submit" name="redefinir">Redefinir</button>
+                <button type="reset" name="limpar">Limpar</button>
             </div>
-            <p>
-                Não é cadastrado? <a href="cadastro.php">Cadastrar</a>
-            </p>
         </form>
     </div>
-
-    <?php
-        
-
-
-    ?>
-
 </body>
 
 </html>
